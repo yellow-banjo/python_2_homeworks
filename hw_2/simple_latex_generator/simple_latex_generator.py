@@ -36,7 +36,7 @@ def escape_latex(s):
 def save_tex(latex_code, file_path):
     with open(file_path, 'w') as f:
         f.write('\documentclass{article}\n\n')
-        f.write('\usepackage{graphicx}\n\n')
+        f.write('\\usepackage{graphicx}\n\n')
         f.write('\\begin{document}\n\n')
         f.write(latex_code)
         f.write('\n\n\end{document}')
