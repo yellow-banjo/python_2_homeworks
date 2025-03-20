@@ -36,6 +36,7 @@ def escape_latex(s):
 def save_tex(latex_code, file_path):
     with open(file_path, 'w') as f:
         f.write('\documentclass{article}\n\n')
+        f.write('\usepackage{graphicx}\n\n')
         f.write('\\begin{document}\n\n')
         f.write(latex_code)
         f.write('\n\n\end{document}')
@@ -60,14 +61,3 @@ def generate_latex_image(
         latex += f"[{options_str}]"
     latex += f"{{{file_path}}}"
     return latex
-
-if __name__ == "__main__":
-    table = [
-        ["Header 1", "Header 2"],
-        ["Data 1", "Data 2"],
-        ["Special & chars", "100%"]
-    ]
-
-    latex_code = generate_latex_table(table) + '\n\n\n'
-    latex_code += generate_latex_image('meme.png')
-    save_tex(latex_code, 'test.tex')
