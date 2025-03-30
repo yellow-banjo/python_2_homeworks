@@ -1,0 +1,22 @@
+[19:48:30.048] - [MAIN] - Main sent: Hello
+[19:48:30.052] - [A] - Received: Hello
+[19:48:34.808] - [MAIN] - Main sent: Its me
+[19:48:35.053] - [A] - Processed and sent: hello
+[19:48:35.053] - [B] - Received: hello
+[19:48:35.053] - [A] - Received: Its me
+[19:48:35.053] - [B] - Encoded and sent: uryyb
+[19:48:37.227] - [MAIN] - Main sent: 123
+[19:48:39.190] - [MAIN] - Main sent: exit
+[19:48:40.056] - [A] - Processed and sent: its me
+[19:48:40.056] - [B] - Received: its me
+[19:48:40.056] - [B] - Encoded and sent: vgf zr
+[19:48:40.056] - [A] - Received: 123
+[19:48:35.053] - [MAIN] - Main received: uryyb
+[19:48:40.056] - [MAIN] - Main received: vgf zr
+[19:48:45.058] - [A] - Processed and sent: 123
+[19:48:45.058] - [B] - Received: 123
+[19:48:45.058] - [A] - Received: exit
+[19:48:45.058] - [B] - Encoded and sent: 123
+[19:48:45.058] - [A] - Sent exit signal: to B
+[19:48:45.058] - [B] - Received: exit
+[19:48:45.058] - [B] - Sent exit signal: to Main

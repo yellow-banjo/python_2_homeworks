@@ -1,0 +1,9 @@
+[project]
+name = "HW4 Threads and Processes"
+version = "0.1.0"
+authors = [
+    {name = "Mikhail Nikolaev"},
+]
+dependencies = [
+    "tabulate",
+]
